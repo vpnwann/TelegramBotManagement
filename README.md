@@ -61,10 +61,9 @@ uploads/                       -> local storage for uploaded photos/documents
 3. **Create the database schema**
 
    Run the SQL in `sql/schema.sql` against your Neon database, e.g.:
-psql "postgresql://neondb_owner:npg_fyHw2njEdUS8@ep-little-frog-a5wy2mgo-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require" -f sql/schema.sql
+
    ```bash
-   psql postgresql://neondb_owner:npg_fyHw2njEdUS8@ep-little-frog-a5wy2mgo-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
- -f sql/schema.sql
+   sql/schema.sql
    ```
 
 4. **Run the server**
